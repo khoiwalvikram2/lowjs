@@ -830,8 +830,8 @@ Object.prototype.toString = (function(toString) {
                         return '[object Set]';
                 else if(this instanceof Map)
                         return '[object Map]';
-                else if(this instanceof Collection)
-                        return '[object Collection]';
+                // else if(this instanceof Collection)
+                //         return '[object Collection]';
                 else
                         return toString.call(this);
         }
