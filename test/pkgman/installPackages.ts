@@ -5,7 +5,7 @@ import { writeNodeModulesFromZip } from "../../lowrmt-common/src/pkgman/files/wr
 
 async function main() {
   const modules = await getOptimizedModules({
-    packages: new Set(["request", "express"]),
+    packages: new Set(["request", "express", "body-parser"]),
     path: join(__dirname, "node_modules_unoptimized")
   });
 
